@@ -1,0 +1,295 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: FS Me;
+	src: url('FSMeWeb-Regular_rcfffc.woff2');
+}
+
+@font-face {
+	font-family: FS me;
+	font-weight: bold;
+	src: url('FSMeWeb-Bold_ce2eoa.woff2');
+}
+
+body,
+html {
+	height: 100%;
+	font-family: FS Me;
+}
+
+.container {
+	display: flex;
+	justify-content: right;
+	align-items: center;
+	height: 100%;
+	background-image: url("WhereYourMoneyGoes-Desktop.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+main {
+	max-width: 624px;
+	height: auto;
+	top: 96px;
+	background-color: #ffffff;
+	border-radius: 10px 10px 10px 10px;
+	margin-right: 50px;
+	padding: 40px;
+}
+
+.heading {
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	text-align: left;
+	font-family: FS Me;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 52px;
+	color: #333333;
+}
+
+.heading:after {
+	content: '';
+	border-bottom: 4px solid #008CAA;
+	padding-top: 10px;
+	width: 48px;
+}
+
+.card-body {
+	padding-top: 20px;
+	font-family: FS Me;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 30px;
+	color: #333333;
+}
+
+.card-body-bold {
+	padding-top: 20px;
+	font-family: FS Me;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 30px;
+	color: #333333;
+}
+
+.info-buttons {
+	padding-top: 20px;
+}
+
+
+.card-btn {
+	float: left;
+	width: 48%;
+	border: #6F3F87;
+	border-radius: 6px;
+	text-align: center;
+	font-family: FS Me;
+	font-size: 26px;
+	font-weight: 700;
+	line-height: 26px;
+	text-align: center;
+	background: #6F3F87;
+	color: #ffffff;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-decoration: none;
+}
+
+.card-btn-alt {
+	font-family: FS Me;
+	font-size: 26px;
+	font-weight: 700;
+	line-height: 26px;
+	text-align: center;
+	background: #173145;
+	border: #173145;
+	border-radius: 6px;
+	float: left;
+	margin-left: 4%;
+	width: 48%;
+	color: #ffffff;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-decoration: none;
+	margin-bottom: 20px;
+}
+
+.tabcontent {
+
+	clear: both;
+	background: #6F3F87;
+	padding: 20px;
+	color: #ffffff;
+	position: relative;
+	border-radius: 10px;
+
+}
+
+.tabcontent:after {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	border-top: 2px solid #6F3F87;
+	border-right: 2px solid #6F3F87;
+	border-bottom: 2px solid #6F3F87;
+	border-left: 2px solid #6F3F87;
+	background: #6F3F87;
+	top: -5%;
+	left: 25%;
+	margin-left: -20px;
+	transform: rotate(45deg);
+
+}
+
+.tabcontent2 {
+
+	clear: both;
+	background: #173145;
+	padding: 20px;
+	color: #ffffff;
+	position: relative;
+	border-radius: 10px;
+
+}
+
+
+.tabcontent2:after {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	border-top: 2px solid #173145;
+	border-right: 2px solid #173145;
+	border-bottom: 2px solid #173145;
+	border-left: 2px solid #173145;
+	background: #173145;
+	top: -5%;
+	left: 77%;
+	margin-left: -20px;
+	transform: rotate(45deg);
+
+}
+
+.p1 {
+	padding-top: 20px;
+	font-family: FS Me;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 26px;
+	color: #ffffff;
+	text-align: left;
+}
+
+.p2 {
+	padding-top: 20px;
+	font-family: FS Me;
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 32px;
+	color: #ffffff;
+	text-align: left;
+
+}
+
+@media only screen and (max-width: 768px) {
+
+	main {
+		max-width: 464px;
+	}
+
+	.heading {
+		font-size: 30px;
+		line-height: 40px;
+	}
+
+	.card-body {
+		font-size: 16px;
+		line-height: 26px;
+	}
+
+	.card-body-bold {
+		font-size: 16px;
+		line-height: 26px;
+	}
+
+	.card-btn {
+
+		font-size: 22px;
+		line-height: 32px;
+	}
+
+	.card-btn-alt {
+
+		font-size: 22px;
+		line-height: 32px;
+
+	}
+
+	.p1 {
+		font-size: 16px;
+		line-height: 26px;
+	}
+
+	.p2 {
+		font-size: 22px;
+		line-height: 32px;
+	}
+
+}
+
+@media only screen and (max-width: 480px) {
+
+	body {
+		background: #D5995F;
+		height: 100%;
+		font-family: FS Me;
+
+	}
+
+	.container {
+		background-image: url("WhereYourMoneyGoes-Mobile.png");
+		background-size: contain;
+		background-position: top;
+	}
+
+	main {
+		margin-left: auto;
+		max-width: 327px;
+		position: relative;
+		top: 307px;
+		padding: 30px;
+		margin-right: auto;
+	}
+
+	.tabcontent:after {
+		top: -4%;
+	}
+
+	.tabcontent2:after {
+		top: -4%;
+	}
+
+	.card-btn {
+
+		font-size: 20px;
+		line-height: 26px;
+	}
+
+	.card-btn-alt {
+
+		font-size: 20px;
+		line-height: 26px;
+
+	}
+}
